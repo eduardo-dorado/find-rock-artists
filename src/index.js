@@ -1,5 +1,5 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
 // import './index.css';
 // import App from './App';
 // import reportWebVitals from './reportWebVitals';
@@ -13,8 +13,13 @@
 
 
 // Demostración con Javascript Vanilla
-let elemento = document.createElement("p")
-elemento.innerHTML = "Soy Eduardo Dorado"
-let contenedor = document.getElementById("root")
-contenedor.appendChild(elemento)
+// let elemento = document.createElement("p")
+// elemento.innerHTML = "Soy Eduardo Dorado"
+// let contenedor = document.getElementById("root")
+// contenedor.appendChild(elemento)
 
+
+// Demostración con React.js - React Dom trabaja directamente con nuestros elementos sin tener que usar los createElement
+let elemento = <p>Hola!</p>
+let container = document.getElementById("root")
+ReactDOM.render(elemento, container)
